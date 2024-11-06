@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS maquinas_expendedoras;
+DROP DATABASE IF EXISTS maquinas_expendedoras;
 CREATE DATABASE maquinas_expendedoras;
 
 USE maquinas_expendedoras;
@@ -39,7 +39,7 @@ CREATE TABLE maquina(
     ,	capacidad	INT				NOT NULL
     ,	modelo		VARCHAR(32) 	NOT NULL
     ,	foto		VARCHAR(128)	NOT NULL	-- RUTA RELATIVA A DONDE ESTÁN LAS IMÁGENES
-    ,	FOREIGN KEY (estado) 	  REFERENCES estado(idestado)
+    ,	FOREIGN KEY (idestado) 	  REFERENCES estado(idestado)
     ,	FOREIGN KEY (idubicacion) REFERENCES ubicacion(idubicacion)
 );
 
