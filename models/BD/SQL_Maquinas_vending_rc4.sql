@@ -63,8 +63,8 @@ CREATE TABLE incidencias(
     ,	estado			VARCHAR(45)		NOT NULL
     ,	descripcion		VARCHAR(128)	NOT NULL
     ,	fecharegistro	DATETIME		NOT NULL
-    ,	fecharesolucion	DATETIME		NOT NULL
-	,	solucion		VARCHAR(128)	NOT NULL
+    ,	fecharesolucion	DATETIME	
+	,	solucion		VARCHAR(128)
     ,	FOREIGN KEY (idmaquina)   REFERENCES maquina(idmaquina)
     ,	FOREIGN KEY (idproducto)  REFERENCES producto(idproducto)
     ,	FOREIGN KEY (idubicacion) REFERENCES ubicacion(idubicacion)
