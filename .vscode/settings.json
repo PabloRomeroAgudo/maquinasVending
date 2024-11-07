@@ -1,0 +1,5 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "intelephense.format.braces": "k&r"
+}
