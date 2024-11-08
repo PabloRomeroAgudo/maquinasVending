@@ -138,3 +138,47 @@ CREATE TABLE menu(
 		boton   VARCHAR(10) 		NOT NULL,   		-- TEXTO DE LA OPCIÓN
 		enlace  VARCHAR(128) 		DEFAULT 'login.php' -- PAGINA DE INICIO DEL MÓDULO
 );
+
+
+
+
+-- Insert de incidencias
+INSERT INTO incidencias 
+( idmaquina
+, idproducto
+, idubicacion
+, categoria
+, stock
+, severidad
+, estado
+, descripcion
+, fecharegistro
+) VALUES 
+(
+  1
+, 1
+, 1
+, "Equipo"
+, 1
+, "ALTA"
+, "Registrada"
+, "DESCRIPCION"
+, NOW()
+),
+(
+  2
+, 2
+, 2
+, "Producto"
+, 2
+, "BAJA"
+, "Solucionada"
+, "DESCRIPCION segunda"
+, NOW()
+);
+
+UPDATE incidencias
+SET 
+fecharesolucion = now(),
+solucion = "Solucionada"
+WHERE idincidencia = 1;
