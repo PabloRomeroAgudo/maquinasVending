@@ -61,6 +61,7 @@ $incidenciaDao = new IncidenciaDao();
     $incidencia = new Incidencia($arrayFinal);
 
     print_r($incidencia);
+    $incidenciaDao->insert($incidencia);
   }
   ?>
 </body>
