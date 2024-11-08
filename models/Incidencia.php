@@ -107,16 +107,17 @@ class Incidencia {
     $this->fecharegistro = $fechaRegistro;
   }
 
-  public function getFechaRegistro(): DateTime {
-    return $this->fecharegistro;
+  public function getFechaRegistro(): string {
+
+    return $this->fecharegistro->format('Y-m-d H:i:s');
   }
 
   public function setFechaResolucion(DateTime|null $fechaResolucion) {
     $this->fecharesolucion = $fechaResolucion;
   }
 
-  public function getFechaResolucion(): DateTime|null {
-    return $this->fecharesolucion;
+  public function getFechaResolucion(): string|null {
+    return $this->fecharesolucion->format('Y-m-d H:i:s');
   }
 
   public function setSolucion(string|null $solucion) {
