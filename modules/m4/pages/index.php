@@ -21,6 +21,10 @@
     <li>
       <a href="./simulator.php">Simular</a>
     </li>
+
+    <li>
+      <a href="./incidencia.php">solo 1</a>
+    </li>
   </ul>
 </body>
 
