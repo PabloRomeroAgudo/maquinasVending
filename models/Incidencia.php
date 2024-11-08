@@ -117,7 +117,7 @@ class Incidencia {
   }
 
   public function getFechaResolucion(): string|null {
-    return $this->fecharesolucion->format('Y-m-d H:i:s');
+    return isset($this->fecharesolucion) ? $this->fecharesolucion->format('Y-m-d H:i:s') : null;
   }
 
   public function setSolucion(string|null $solucion) {
